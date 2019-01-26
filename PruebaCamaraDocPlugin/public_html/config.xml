@@ -7,7 +7,7 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name> Pruebas camara</name>
+    <name> Pruebas camara usando plugin</name>
 
     <description>
         Prueba distintas formas de acceder  a la camara
