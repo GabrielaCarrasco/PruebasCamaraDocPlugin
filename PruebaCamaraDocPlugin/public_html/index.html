@@ -11,12 +11,7 @@
     function onLoad() {
         document.addEventListener("deviceready", onDeviceReady, false);
         alert("Aca");
-    }
-
-    // device APIs are available
-    //
-    function onDeviceReady() {
-        alert("OnDeviceReady");
+        /*Prueba cambo de lugar navigator.camera*/
         navigator.camera.getPicture(cameraSuccess, cameraError, cameraOptions);
         
         function cameraSuccess(){
@@ -30,6 +25,25 @@
         function cameraOptions(){
             alert('Options');
         }
+    }
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        alert("OnDeviceReady");
+        /*navigator.camera.getPicture(cameraSuccess, cameraError, cameraOptions);
+        
+        function cameraSuccess(){
+           alert('Success');
+        }
+        
+        function cameraError(){
+               alert('Error');
+        }
+        
+        function cameraOptions(){
+            alert('Options');
+        }*/
         // Now safe to use device APIs
     }
 
