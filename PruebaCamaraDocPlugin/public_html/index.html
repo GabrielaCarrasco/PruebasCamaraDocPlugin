@@ -16,7 +16,19 @@
     // device APIs are available
     //
     function onDeviceReady() {
-        alert("Ahora aca");
+        navigator.camera.getPicture(cameraSuccess, cameraError, cameraOptions);
+        
+        function cameraSuccess(){
+           alert('Success');
+        }
+        
+        function cameraError(){
+               alert('Error');
+        }
+        
+        function cameraOptions(){
+            alert('Options');
+        }
         // Now safe to use device APIs
     }
 
@@ -24,5 +36,6 @@
   </head>
   <body onload="onLoad()">
  <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+  <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
   </body>
 </html>
