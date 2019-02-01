@@ -16,6 +16,7 @@
     // device APIs are available
     //
     function onDeviceReady() {
+        alert("OnDeviceReady");
         navigator.camera.getPicture(cameraSuccess, cameraError, cameraOptions);
         
         function cameraSuccess(){
